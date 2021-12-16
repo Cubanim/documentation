@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- TO DO 
+  - Custom <i>
+  - import end of documentation
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/simple-grid.css">
+  <link rel="icon" href="img/assets/favicon.ico" />
+  <meta name="description"
+    content="Cubanim est un outil pour rendre accessible la création d'animations pour tous à l'aide de cube" />
+  <meta property="og:title" content="Cubanim" />
+  <meta property="og:description"
+    content="Est un outil pour rendre accessible la création d'animations pour tous à l'aide de cube" />
+  <meta property="og:image" content="../img/assets/img-banner.jpg" />
+  <meta name="twitter:title" content="Cubanim">
+  <meta name="twitter:description"
+    content="Est un outil pour rendre accessible la création d'animations pour tous à l'aide de cube">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="white">
+  <link rel="apple-touch-icon" href="img/assets/icon.png">
+  <title>Cubanim</title>
+</head>
+
+<body>
+  <div class="bg_orange-yellow"></div>
+  <div class="container">
+    <div class="row">
+
+      <!-- Navbar -->
+      <div class="navbar">
+        <a href="index.html" class="col-2 logo"><img src="img/assets/logo_logowordmark.svg" alt="logo cubanim"
+            srcset=""></a>
+        <div class="col-10">
+          <!-- <div class="left">
+                <a href="setup.html">Installer Cubanim</a>
+                <a href="setup.html">Documentation</a>
+              </div> -->
+        </div>
+      </div>
+
+
+      <div class="col-12">
+
+        <!-- Start introduction documentation -->
+        <h1>Documentation</h1>
+        <p>Grâce à la doucmmentation, vous pouvez ajouter installer Cubanim sur projet. Suivez la documentation étape
+          par étape.</p>
+
+        <div class="sommary">
+          <h3>Sommaire</h3>
+          <li><a href="#prérequis">Prérequis</a></li>
+          <li><a href="#config-vuforia">Configuration de Vuforia</a></li>
+        </div>
+
+        <!-- End introduction documentation -->
+
+        <section class="documentation_section">
+          <div id="prérequis">
+            <h3>Prérequis</h3>
+            <li>
+              <p>Unity (version 2020.3.20 ou supérieur)</p>
+            </li>
+            <li>
+              <p>Obtenir Vuforia Engine</p>
+            </li>
+            <p>Pour ce faire il vous faudra installer <a href="https://unity.com/download">Unity</a> et vous vous créer
+              un compte gratuit en suivant ce <a href="https://id.unity.com/account/new" target="_blank">lien</a>.</p>
+            <p>Vuforia Engine est nécessaire pour utiliser Cubanim, vous devez donc vous <a
+                href="https://developer.vuforia.com/"> créer un compte développeur</a></p>
+          </div>
+        </section>
+
+        <section class="documentation_section">
+          <div id="config-vuforia">
+            <h3>Configuration de Vuforia</h3>
+            <p>Une fois votre compte créé, il vous faut obtenir une licence, cliquez sur <i>Get basic</i>,</p>
+            <img src="img/doc/creator/JPEG/docCreator2.jpg" alt="" class="col-12">
+            <p>Donnez lui un nom et une fois ceci fait, vous pouvez commencer à inclure des images target.</p>
+            <img src="img/doc/creator/JPEG/docCreator3.jpg" alt="" class="col-12"></img>
+            <p>Le fonctionnement de Vuforia va permettre à la caméra de reconnaître des images targets grâce à des
+              points d'intersection présents sur l’image.</p>
+            <img src="img/doc/creator/JPEG/docCreator18.jpg" alt="" class="col-12">
+            <!--<p>Des effets de particules sont enregistrées dans le fichier Cubanim.</p>-->
+            <p>Pour ajouter des images targets, vous devez d’abord créer une base de données pour y mettre toutes vos
+              images target. Cliquez sur <i>“Add Database”</i>.</p>
+            <img src="img/doc/creator/JPEG/docCreator5.jpg" alt="" class="col-12">
+            <p>Puis choisissez “Device” en nommant votre database (Base de données).</p>
+            <img src="img/doc/creator/JPEG/docCreator7.jpg" alt="" class="col-12">
+            <p>Une fois ceci fait vous pouvez ajouter des images targets dans votre base de données Vuforia. aller sur
+              <i>`Target manager`</i>, et cliquez sur <i>“add target”</i>.</p>
+            <img src="img/doc/creator/JPEG/docCreator1.jpg" alt="" class="col-12">
+            <p>Il faut alors mettre “Single Image”, <b>avec un “width” de 30</b> ce qui est suffisant pour la largeur
+              d’un cube de 10 cm. et Importez votre image.</p>
+            <p>Après votre image importée, vous pouvez voir un nombre d’étoiles en fonction que Vuforia a de la facilité
+              à reconnaître l’image target.</p>
+            <img src="img/doc/creator/JPEG/docCreator13.jpg" alt="" class="col-12">
+            <p>En cliquant sur votre image, vous pouvez aussi voir les détails du marquage en cliquant sur <i>“Some
+                Features”</i>.</p>
+            <img src="img/doc/creator/JPEG/docCreator11.jpg" alt="" class="col-6">
+            <img src="img/doc/creator/JPEG/docCreator12.jpg" alt="" class="col-6">
+          </div>
+      </div>
+      <p>Une fois toutes les images importées dans votre Vuforia. Téléchargez votre fichier Vuforia en cliquant sur
+        <i>“Download Database”</i> puis sur <i>“Unity Editor”</i>.</p>
+      <img src="img/doc/creator/JPEG/docCreator14.jpg" alt="" class="col-12">
+      <p>Vuforia vous a donc exporté votre database en fichier, dans le cas ici <i>“Nom-de-ma-base.unitypackage”</i>.
+      </p>
+      <img src="img/doc/creator/JPEG/docCreator19.jpg" alt="" class="col-12">
+      <p>Ouvrez votre fichier et importer-le dans votre projet Unity</p>
+      <img src="img/doc/creator/JPEG/docCreator15.jpg" alt="" class="col-12">
+      <p>Téléchargez le package Vuforia disponible dans la page <a href="https://developer.vuforia.com/downloads/sdk"
+          target="_blank">Downloads</a>. Et ouvrez-le pour l'importer dans votre projet.</p>
+      <p>Après l'installation, si vous allez dans <i>"Window" > "package manager"</i>, vous pouvez voir que le package à
+        été correctement installé.</p>
+      <img src="img/doc/creator/JPEG/docCreator15.jpg" alt="" class="col-12">
+      <!--Faire la capture-->
+      <br>
+
+      <p>La suite de la documentation arrive dans la semaine...</p>
+
+
+
+      <!--<p>Download data base !!!!!! + change width page de 98% </p>-->
+
+    </div>
+    </section>
+
+    <br>
+
+    <section class="documentation_section">
+      <div id="Title-2">
+
+      </div>
+    </section>
+
+    <br>
+
+    <section class="documentation_section">
+      <div id="Title-3">
+
+      </div>
+    </section>
+
+    <br>
+
+    <div class="col-12">
+      <a href="doc.html">
+        <div class="card">
+          <img src="img/assets/union.svg" alt="" width="50px" srcset="">
+          <h4>Je veux personnaliser mon Cubanim</h4>
+        </div>
+      </a>
+    </div>
+
+  </div>
+  </div>
+</body>
+
+</html>
