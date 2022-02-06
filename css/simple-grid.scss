@@ -365,6 +365,14 @@ $breakpoint-large: 60em; // 960px
   }
 }
 
+code {
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  background-color: #eeeeee;
+  padding: 7px;
+  border-radius: 4px;
+}
+
 // for devices
 
 @media only screen and (min-width: 320px) {
@@ -374,5 +382,6 @@ $breakpoint-large: 60em; // 960px
   .bg_orange-yellow {
     top: -30vh;
     right: 0%;
-    width: 50%;}
+    width: 50%;
+  }
 }

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!-- TO DO 
-  - Custom <i>
   - import end of documentation
   - fix text bug
 -->
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -57,6 +57,8 @@
           <h3>Sommaire</h3>
           <li><a href="#prérequis">Prérequis</a></li>
           <li><a href="#config-vuforia">Configuration de Vuforia</a></li>
+          <li><a href="#ajouter-vos-images-target">Ajouter vos images target</a></li>
+          <li><a href="#faire-des-animations">Faire des animations</a></li>
         </div>
 
         <!-- End introduction documentation -->
@@ -80,7 +82,7 @@
         <section class="documentation_section">
           <div id="config-vuforia">
             <h3>Configuration de Vuforia</h3>
-            <p>Une fois votre compte créé, il vous faut obtenir une licence, cliquez sur <i>Get basic</i>,</p>
+            <p>Une fois votre compte créé, il vous faut obtenir une licence, cliquez sur <code>Get basic</code>,</p>
             <img src="img/doc/creator/JPEG/docCreator2.jpg" alt="" class="col-12">
             <p>Donnez lui un nom et une fois ceci fait, vous pouvez commencer à inclure des images target.</p>
             <img src="img/doc/creator/JPEG/docCreator3.jpg" alt="" class="col-12"></img>
@@ -89,41 +91,48 @@
             <img src="img/doc/creator/JPEG/docCreator18.jpg" alt="" class="col-12">
             <!--<p>Des effets de particules sont enregistrées dans le fichier Cubanim.</p>-->
             <p>Pour ajouter des images targets, vous devez d’abord créer une base de données pour y mettre toutes vos
-              images target. Cliquez sur <i>“Add Database”</i>.</p>
+              images target. Cliquez sur <code>“Add Database”</code>.</p>
             <img src="img/doc/creator/JPEG/docCreator5.jpg" alt="" class="col-12">
-            <p>Puis choisissez “Device” en nommant votre database (Base de données).</p>
+            <p>Puis choisissez <code>Device</code> en nommant votre database (Base de données).</p>
             <img src="img/doc/creator/JPEG/docCreator7.jpg" alt="" class="col-12">
             <p>Une fois ceci fait vous pouvez ajouter des images targets dans votre base de données Vuforia. aller sur
-              <i>`Target manager`</i>, et cliquez sur <i>“add target”</i>.</p>
+              <code>`Target manager`</code>, et cliquez sur <code>“add target”</code>.
+            </p>
             <img src="img/doc/creator/JPEG/docCreator1.jpg" alt="" class="col-12">
-            <p>Il faut alors mettre “Single Image”, <b>avec un “width” de 30</b> ce qui est suffisant pour la largeur
+            <p>Il faut alors mettre <code>Single Image</code>, avec un <code>width</code> de 30 ce qui est
+              suffisant pour la
+              largeur
               d’un cube de 10 cm. et Importez votre image.</p>
             <p>Après votre image importée, vous pouvez voir un nombre d’étoiles en fonction que Vuforia a de la facilité
               à reconnaître l’image target.</p>
             <img src="img/doc/creator/JPEG/docCreator13.jpg" alt="" class="col-12">
-            <p>En cliquant sur votre image, vous pouvez aussi voir les détails du marquage en cliquant sur <i>“Some
-                Features”</i>.</p>
+            <p>En cliquant sur votre image, vous pouvez aussi voir les détails du marquage en cliquant sur <code>“Some
+                Features”</code>.</p>
             <img src="img/doc/creator/JPEG/docCreator11.jpg" alt="" class="col-6">
             <img src="img/doc/creator/JPEG/docCreator12.jpg" alt="" class="col-6">
           </div>
       </div>
       <p>Une fois toutes les images importées dans votre Vuforia. Téléchargez votre fichier Vuforia en cliquant sur
-        <i>“Download Database”</i> puis sur <i>“Unity Editor”</i>.</p>
-      <img src="img/doc/creator/JPEG/docCreator14.jpg" alt="" class="col-12">
-      <p>Vuforia vous a donc exporté votre database en fichier, dans le cas ici <i>“Nom-de-ma-base.unitypackage”</i>.
+        <code>Download Database</code> puis sur <code>Unity Editor</code>.
       </p>
+      <img src="img/doc/creator/JPEG/docCreator14.jpg" alt="" class="col-12">
+      <p>Vuforia vous a donc exporté votre database en fichier, dans le cas ici
+        <br><code>“Nom-de-ma-base.unitypackage”</code>.
+      </p>
+      <p>Téléchargez puis ouvrez le Toolkit de Cubanim disponible <a
+          href="https://github.com/Cubanim/Cubanim-ToolkitUnity" target="_blank">ici</a>.</p>
       <img src="img/doc/creator/JPEG/docCreator19.jpg" alt="" class="col-12">
-      <p>Ouvrez votre fichier et importer-le dans votre projet Unity</p>
+      <p>Puis ouvrez votre fichier <code>Cubanim-ToolkitUnity</code> et importer votre fichier
+        <br><code>Nom-de-ma-base.unitypackage</code> dans votre projet Unity.
+      </p>
       <img src="img/doc/creator/JPEG/docCreator15.jpg" alt="" class="col-12">
       <p>Téléchargez le package Vuforia disponible dans la page <a href="https://developer.vuforia.com/downloads/sdk"
           target="_blank">Downloads</a>. Et ouvrez-le pour l'importer dans votre projet.</p>
-      <p>Après l'installation, si vous allez dans <i>"Window" > "package manager"</i>, vous pouvez voir que le package à
-        été correctement installé.</p>
+      <p>Après l'installation, si vous allez dans <code>Window > package manager</code>, vous pouvez voir que le
+        package à été correctement installé.</p>
       <img src="img/doc/creator/JPEG/docCreator15.jpg" alt="" class="col-12">
       <!--Faire la capture-->
       <br>
-
-      <p>La suite de la documentation arrive dans la semaine...</p>
 
 
 
@@ -135,16 +144,40 @@
     <br>
 
     <section class="documentation_section">
-      <div id="Title-2">
+      <div id="ajouter-vos-images-target">
+        <h3>Ajouter vos images Target</h3>
+        <img src="img/doc/creator/JPEG/docCreator21.jpg" alt="">
+        <p>Les images montrés dans ce toolkit Unity sont stocké dans le dossier
+          <code>Assets/Editor/ImageTargetTextures/Cubanim</code>.
+        </p>
+        <p>En cliquant sur un objet, vous pouvez modifier l'image target. Celui-ci est lié à votre base de données
+          Vuforia. Sur votre fichier ce sera peut-être pas écrit "Cubanim" mais par exemple "Nom-de-ma-base-Vuforia".
+        </p>
+        <img src="img/doc/creator/JPEG/docCreator20.jpg" alt="">
+        <p>Dans mon cas ici, je cible l'image <code>1_1</code> de ma base de données <code>Cubanim</code> qui est dans
+          Vuforia.</p>
+        <p>Pour modifier l'image target affiché sur Unity, vous pouvez importer une image. Importer votre images dans la
+          partie Assets puis séléctionnez sur la Scene l'image que vous voulez modifier puis tout en bas dans le panneau
+          à droite. vous pouvez glisser/déposer votre image.</p>
+
+        <!-- <img src="img/doc/creator/JPEG/docCreator23.jpg" alt=""> Faire image  -->
 
       </div>
     </section>
 
     <br>
 
-    <section class="documentation_section">
-      <div id="Title-3">
 
+    <!-- Dire comment associé une animation -->
+    <section class="documentation_section">
+      <div id="#faire-des-animations">
+        <h3>Faire des animations</h3>
+        <p>Pour faire des animations sur Cubanim, vous devez utiliser le Particle System. Vous pouvez y accéder depuis
+          le menu <code>+ / Effects / Particle System </code></p>
+        <img src="img/doc/creator/JPEG/docCreator22.jpg" alt="">
+        <p>Pour plus d'informations, voici la <a
+            href="https://learn.unity.com/tutorial/introduction-to-particle-systems" target="_blank">documentation
+            d'Unity</a></p>
       </div>
     </section>
 
